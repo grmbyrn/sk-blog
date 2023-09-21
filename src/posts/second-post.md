@@ -2,14 +2,20 @@
 title: Second post
 description: Second post.
 date: '2023-4-16'
-category: 
+categories: 
     - sveltekit
     - svelte
 published: true
 ---
+
+<script>
+    import Counter from './counter.svelte'
+</script>
 
 ## Svelte
 
 Media inside the **static** folder is served from `/`.
 
 ![Svelte](favicon.png)
+
+<Counter />
