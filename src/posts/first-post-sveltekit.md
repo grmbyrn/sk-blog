@@ -5,6 +5,7 @@ date: '2023-11-09'
 categories:
   - sveltekit
   - svelte
+coverImage: /images/sveltekit.png
 published: true
 ---
 

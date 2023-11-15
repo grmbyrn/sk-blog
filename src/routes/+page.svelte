@@ -9,7 +9,17 @@
 </svelte:head>
 
 <section>
-	<a href="/topics">Topics</a>
+	<ul class="posts">
+		{#each data.posts as post}
+			<li class="post">
+				{#if post.coverImage}
+					<img src={post.coverImage} alt="Cover" />
+				{/if}
+				<a href={post.slug} class="title">{post.title}</a>
+				<p class="date">{formatDate(post.date)}</p>
+			</li>
+		{/each}
+	</ul>
 </section>
 
 <style>
